@@ -1,0 +1,164 @@
+<!-- Pre-load info and picks style from the styles.css file page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Respiratory Diseases | Sample Department of Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<!-- Header information -->
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div>
+        <div class="eyebrow">DC Health</div>
+        <h1>Respiratory Diseases</h1>
+        <p class="lede">Example information and guidance on common respiratory diseases, prevention, reporting, and resources.</p>
+      </div>
+      <div class="status-card">
+        <span class="badge">Last Updated</span>
+        <strong>3/30/2026</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container two-col">
+        <div>
+          <h2>What are Respiratory Diseases?</h2>
+          <p>
+            Respiratory diseases affect the lungs and other parts of the respiratory system,
+            including the airways and throat. Common symptoms include difficulty breathing,
+            coughing, and chest pain.
+          </p>
+<!-- Buttons that takes you right to the disease specific website 
+ Can be used in conjunction or replaces dropdown selection button
+          <div class="button-row">
+            <a class="button primary" href="covid.html">COVID-19</a>
+            <a class="button primary" href="flu.html">Influenza</a>
+            <a class="button primary" href="rsv.html">RSV</a>
+            <a class="button primary" href="legionellosis.html">Legionellosis</a>
+            <a class="button primary" href="#reporting">Healthcare provider reporting</a>
+          </div>
+        </div>
+ -->
+        <aside class="panel selector-panel" aria-labelledby="disease-nav-title">
+          <h3 id="disease-nav-title">Find disease-specific information</h3>
+          <label for="diseaseSelect" class="label">Choose a respiratory disease</label>
+          <select id="diseaseSelect" class="select" aria-describedby="diseaseSelectHint">
+            <option value="">Select a page</option>
+            <option value="covid.html">COVID-19</option>
+            <option value="influenza.html">Influenza</option>
+            <option value="rsv.html">RSV</option>
+            <option value="legionellosis.html">Legionellosis</option>
+            <option value="caregiver.html">Caregiver guidance (WIP - placeholder)</option>
+          </select>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Respiratory Disease Guidance</h2>
+        <p>There are some core steps that you can take to help protect yourself and your community from infectious respiratory diseases.</p>
+        <div class="card-grid spread">
+          <article class="info-card">
+            <h3>Stay up to date with immunizations</h3>
+            <p>Vaccination helps reduce severe illness and supports community protection.</p>
+          </article>
+          <article class="info-card">
+            <h3>Stay home when sick</h3>
+            <p>Reduce spread to others by staying home while ill and following return guidance.</p>
+          </article>
+          <article class="info-card">
+            <h3>Practice good hygiene</h3>
+            <p>Wash your hands often and cover coughs and sneezes.</p>
+          </article>
+          <article class="info-card">
+            <h3>Improve air quality</h3>
+            <p>Good ventilation can help reduce spread in shared indoor spaces.</p>
+          </article>
+          <article class="info-card">
+            <h3>Get treatment early</h3>
+            <p>Prompt care can lower the risk of serious complications for some diseases.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reporting">
+      <div class="container two-col reporting-grid">
+        <div>
+          <h2>
+            <a href="caregiver.html">Healthcare Provider Reporting</a>
+          </h2>
+          <p>
+            Healthcare providers must report all notifiable respiratory diseases by completing a
+            case report form or by calling the Division of Epidemiology at <strong>(202) 555-5555</strong>.
+          </p>
+          <ul class="clean-list">
+            <li>View the list of notifiable diseases and conditions in DC.</li>
+            <li>Use the online case report form user guide for submission support.</li>
+            <li>Review guidance for long-term care facilities and other healthcare settings.</li>
+          </ul>
+        </div>
+        <aside class="panel">
+          <h3>For Healthcare Professionals</h3>
+          <p>Guidelines for controlling respiratory disease outbreaks in long-term care facilities and other settings.</p>
+          <ul class="attachment-list">
+            <li>March 2024 Respiratory Illness One-pager</li>
+            <li>August 2024 COVID FAQs</li>
+            <li>October 2024 Respiratory Guidance for Congregate Settings</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>For more information on specific respiratory diseases</h2>
+        <div class="link-cards">
+          <a class="link-card" href="covid.html">
+            <strong>COVID-19</strong>
+            <span>View symptoms, vaccination, testing, treatment, and frequently asked questions</span>
+          </a>
+          <div class="link-cards">
+            <a class="link-card" href="flu.html">
+              <strong>Influenza</strong>
+              <span>Sample placeholder</span>
+            </a>
+          </div>
+          <div class="link-cards">
+            <a class="link-card" href="rsv.html">
+              <strong>Respiratory Syncytial Virus (RSV)</strong>
+              <span>Sample placeholder</span>
+            </a>
+          </div>
+          <div class="link-cards">
+            <a class="link-card" href="legionellosis.html">
+              <strong>Legionellosis</strong>
+              <span>View symptoms, exposures, and guidance for building managers and healtcare professionals</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Sample Respiratory Diseases Site</strong>
+        <p>Example built for practice and proof of concept in VSCode.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
